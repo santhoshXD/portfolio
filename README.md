@@ -1,3 +1,7 @@
+A responsive portfolio seamlessly showcasing skills and projects, ensuring an optimal viewing experience across all devices.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

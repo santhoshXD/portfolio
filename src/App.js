@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { createGlobalStyle } from "styled-components";
+import Portfolio from "./components/Portfolio";
+
+const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&display=swap');
+
+  body {
+    font-family: 'Instrument Serif', serif;
+    font-size: 1.3rem;
+  }
+
+  h2{
+    font-weight: 600;
+  }
+
+ 
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <GlobalStyle />
+      <Portfolio />
     </div>
   );
 }
